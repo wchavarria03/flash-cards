@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -30,30 +31,34 @@ export default class FlashCardMenu extends React.Component {
   render() {
     return (
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Flash Cards</NavbarBrand>
+        <NavbarBrand href="/#">Flash Cards</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="#/random">Random Card</NavLink>
+              <NavLink tag={Link} to="random">
+                Random Card
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink disabled href="/react">React Card</NavLink>
+              <NavLink disabled tag={Link} to="react">
+                React Card
+              </NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Cards
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem disabled>
+                <DropdownItem disabled tag={Link} to="add">
                   Add
                 </DropdownItem>
-                <DropdownItem disabled>
+                <DropdownItem disabled tag={Link} to="modify">
                   Modify
                 </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem disabled>
-                  Delete
+                <DropdownItem disabled tag={Link} to="delete">
+                  Add
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
@@ -62,7 +67,7 @@ export default class FlashCardMenu extends React.Component {
                 Settings
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem disabled>
+                <DropdownItem disabled tag={Link} to="">
                   Profile
                 </DropdownItem>
                 <DropdownItem divider />

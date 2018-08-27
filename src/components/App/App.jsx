@@ -1,8 +1,9 @@
 import React from 'react';
+import {RouteHandler} from "react-router"
 import { Container, Row, Col } from 'reactstrap';
 import Header from '@/components/UI/Header';
 
-export default () => (
+export default (props) => (
   <Container fluid={true}>
     <Row noGutters>
       <Col>
@@ -11,8 +12,7 @@ export default () => (
     </Row>
     <Row>
       <Col>
-        asd
-        {/* { this.props.children } */}
+      {props.children}
       </Col>
     </Row>
   </Container>  
