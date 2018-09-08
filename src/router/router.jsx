@@ -21,9 +21,10 @@ export default (
       {/* </Route> */}
 
       <Switch>
-        <Route exact path="/" component={About} />
+        <Route exact path="/" component={Random} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/random" component={Random} />
+        <Route exact path="/about" component={About} />
         <Route exact path="/not" component={NotFoundPage} />
         {/* <NotFoundRoute handler={NotFoundPage}/> */}
       </Switch>

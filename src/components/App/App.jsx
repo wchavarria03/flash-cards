@@ -1,10 +1,9 @@
 import React from 'react';
-import {RouteHandler} from "react-router"
 import { Container, Row, Col } from 'reactstrap';
 import Header from '@/components/UI/Header';
 
 export default (props) => (
-  <Container fluid={true}>
+  <Container>
     <Row noGutters>
       <Col>
         <Header />

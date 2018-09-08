@@ -30,7 +30,7 @@ export default class FlashCardMenu extends React.Component {
   }
   render() {
     return (
-      <Navbar color="light" light expand="md">
+      <Navbar light expand="md">
         <NavbarBrand href="/#">Flash Cards</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
@@ -58,7 +58,7 @@ export default class FlashCardMenu extends React.Component {
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem disabled tag={Link} to="delete">
-                  Add
+                  Delete
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
@@ -69,6 +69,9 @@ export default class FlashCardMenu extends React.Component {
               <DropdownMenu right>
                 <DropdownItem disabled tag={Link} to="">
                   Profile
+                </DropdownItem>
+                <DropdownItem tag={Link} to="about">
+                  About
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem disabled>
