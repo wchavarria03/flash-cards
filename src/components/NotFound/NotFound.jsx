@@ -1,8 +1,10 @@
 import React from 'react';
 import NotFound from '@/components/UI/NotFound'; 
 
-export default () => (
+const NotFoundPage = () => (
   <div>
     <NotFound />
   </div>
 );
+
+export default NotFoundPage;
