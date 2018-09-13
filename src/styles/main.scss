@@ -6,3 +6,34 @@ body {
   margin: 0 auto;
   font-weight: 300;
 }
+.main-title {
+  font-size: 100px;
+  font-weight: 100;
+  text-align: center;
+  color: rgba(47, 134, 175, 0.75);
+}
+.btn {
+  background-color: rgba(47, 134, 175, 0.75);
+  height: 50px;
+  min-width: 100px;
+  margin-right: 10px;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: rgba(230,78,93,1);
+  border-color: rgb(226,52,69);
+  &:hover, &:not(.disabled):not(.disabled):active {
+    background-color: rgba(208,61,76,1);
+    border-color: rgb(234,58,76);
+  }
+}
+.btn-success {
+  color: #fff;
+  background-color: rgba(61,158,83,1);
+  border-color: rgb(44,130,64);
+  &:hover, &:not(.disabled):not(.disabled):active {
+    background-color: rgba(51,150,74,1);
+    border-color: rgb(26,125,62);
+  }
+}

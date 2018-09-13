@@ -1,0 +1,15 @@
+.ReactFlipCard {
+  transition: all 5s cubic-bezier(0.870, 0.025, 0.130, 0.985);
+  transform: rotateY(0deg);
+}
+.ReactFlipCard__Flipper {
+  position: relative;
+}
+.ReactFlipCard--flipped {
+  transform: rotateY(360deg);
+}
+.ReactFlipCard__Content {
+  backface-visibility: hidden;
+  transition: 0.6s;
+  position: absolute;
+}
